@@ -8,7 +8,7 @@
 		<OutputType>Library</OutputType>
 		<Version>0.0.1</Version>
 		<!-- The two lines below will set the output path for the binaries -->
-		<OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)-$(Version)\</OutputPath>
+		<OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 
