@@ -14,8 +14,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.9" />
-    <PackageReference Include="SPTarkov.Common" Version="4.0.0-pre.202510110943" />
-    <PackageReference Include="SPTarkov.DI" Version="4.0.0-pre.202510110943" />
-    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0-pre.202510110943" />
+    <PackageReference Include="SPTarkov.Common" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0" />
   </ItemGroup>
 </Project>
