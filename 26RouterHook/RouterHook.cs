@@ -59,7 +59,7 @@ public class RouterHook : StaticRouter
                     info,
                     sessionId,
                     output
-                ) => await HandleRouteSync(url, sessionId, output)
+                ) => await HandleRoute(url, sessionId, output)
             ),
             new RouteAction(
                 "/client/game/logout",
@@ -68,45 +68,19 @@ public class RouterHook : StaticRouter
                     info,
                     sessionId,
                     output
-                ) => await HandleRouteAsync(url, sessionId, output)
+                ) => await HandleRoute(url, sessionId, output)
             )
         ];
     }
 
     /**
-     * Example of an asynchronous route listener
-     * This WILL NOT block the original route action while executing
+     * Example of a route listener
      */
-    private static ValueTask<string> HandleRouteAsync(string url, MongoId sessionId, String? output)
+    private static ValueTask<string> HandleRoute(string url, MongoId sessionId, String? output)
     {
-        // Spin off a new task to run asynchronously
-        _ = Task.Run(async () => 
-        {
-            // Your mod's asynchronous code goes here
-            
-            // Simulates some asynchronous work (DELETE THIS IN PRODUCTION MODS)
-            _logger.Info($"Async work started from route {url} for session {sessionId}");
-            // await Task.Delay(10000);
-            Thread.Sleep(10000);
-            _logger.Info($"Async work completed from route {url} for session {sessionId}");
-        });
-
-        // Unless you want to modify what the route returned, return the output unmodified.
-        return new ValueTask<string>(output);
-    }
-
-    /**
-     * Example of a synchronous route listener
-     * This WILL block the original route action while executing
-     */
-    private static ValueTask<string> HandleRouteSync(string url, MongoId sessionId, String? output)
-    {
-        // Your mod's synchronous code goes here
-        
-        // Simulates some synchronous work (DELETE THIS IN PRODUCTION MODS)
-        _logger.Info($"Synchronous work started from route {url} for session {sessionId}");
-        Thread.Sleep(10000);
-        _logger.Info($"Synchronous work completed from route {url} for session {sessionId}");
+        // Your mod's code goes here
+        _logger.Info($"Hooked route {url} for session {sessionId}");
+        Thread.Sleep(5000); // Simulates the mod doing some work (DELETE THIS IN PRODUCTION MODS)
 
         // Unless you want to modify what the route returned, return the output unmodified.
         return new ValueTask<string>(output);
