@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25AddCustomLocales", "25Add
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.1OverrideMethodHarmony", "6.1OverrideMethodHarmony\06.1OverrideMethodHarmony.csproj", "{04865471-AB89-4D98-AAD6-283F099148C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26RouterHook", "26RouterHook\26RouterHook.csproj", "{36CB118F-2114-4CED-A7EA-573E11AB96DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{04865471-AB89-4D98-AAD6-283F099148C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04865471-AB89-4D98-AAD6-283F099148C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04865471-AB89-4D98-AAD6-283F099148C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CB118F-2114-4CED-A7EA-573E11AB96DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CB118F-2114-4CED-A7EA-573E11AB96DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CB118F-2114-4CED-A7EA-573E11AB96DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CB118F-2114-4CED-A7EA-573E11AB96DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
